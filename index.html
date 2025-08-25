@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Event</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+            width: 100% ;
+        } 
+            
+    #main{
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+        background-color: #212121;
+    }
+    input {
+        display: block;
+        background-color: #222;
+        color: white; /* text color for contrast */
+        border: 1px solid white; /* optional: visible border */
+
+    }
+     
+    .card {
+        max-width: 100px;
+        margin: 40px;
+        padding: 20px;
+        border: 1px solid black;
+        background-color: #333;
+        display: inline-block;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .profile {
+           width: 50px;
+           height: 50px;
+           border-radius: 50%;
+           margin-bottom: 7px;
+           overflow: hidden;
+    }
+    .profile img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card h5 {
+        margin-top: 5px;
+    }
+
+    .card p {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    
+    </style>
+</head>
+<body>
+ <div id="main">
+    <form action="" style="background-color: #212121;">
+        <input type="text" placeholder="profile pic">
+        <input type="text" placeholder="name">
+        <input type="text" placeholder="Occupation">
+        <input type="text" placeholder="info">
+        <input type="submit">
+    </form>
+      
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
