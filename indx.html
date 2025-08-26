@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Cards UI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .form-container {
+      background-color: #1e1e1e;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 50px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      background: #2a2a2a;
+      border: none;
+      border-radius: 5px;
+      color: white;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #3a3a3a;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      margin: 5px 0;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+<form>
+  <div class="form-container">
+    <h2>Add User</h2>
+    <div class="form-group">
+  <label>Name</label>
+  <input type="text" id="name" placeholder="Enter name" />
+</div>
+<div class="form-group">
+  <label>Role</label>
+  <input type="text" id="role" placeholder="Enter role" />
+</div>
+<div class="form-group">
+  <label>Bio</label>
+  <textarea rows="3" id="bio" placeholder="Enter bio"></textarea>
+</div>
+
+    <div class="form-group">
+      <label>Photo URL</label>
+      <input type="text" id="photo" placeholder="Enter image URL" />
+    </div>
+    <button class="submit-btn">Submit</button>
+  </div>
+</form>
+  <div class="cards">
+  </div>
+
+  <script src="pro.js"></script>
+
+</body>
+</html>
